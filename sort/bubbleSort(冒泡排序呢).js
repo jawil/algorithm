@@ -28,8 +28,6 @@ function bubbleSort(arr) {
 }
 
 
-
-
 //优化版,对前面已经是有序的就不用排了
 function improveBubbleSort1(arr) { // 如果前面的已经排好序，那么之后的就不用进行交换和比较了
     let i, len, j, flag, temp
