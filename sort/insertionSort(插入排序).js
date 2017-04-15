@@ -67,6 +67,4 @@ function improveInsertSort(arr) {
 
 }
 
-console.log(arr)
-
 console.log(improveInsertSort(arr))
