@@ -1,8 +1,6 @@
 const generateRandomArray = require('../util/sortTestHelper.js')
 
-
 let arr = generateRandomArray(30000, 10, 100)
-
 
 /*
 方法说明：选择排序

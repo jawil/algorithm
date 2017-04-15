@@ -1,8 +1,6 @@
 const generateRandomArray = require('../util/sortTestHelper.js')
 
-
 let arr = generateRandomArray(20000, 1, 12000)
-
 
 /*
 方法说明：冒泡排序
@@ -55,8 +53,7 @@ function improveBubbleSort1(arr) { // 如果前面的已经排好序，那么之
 }
 
 
-//再次优化版，记录每次交换的位置，从交换位置的
-//地方再次比较，比上面的更优雅先进
+//再次优化版，记录每次交换的位置，从交换位置的地方再次比较，比上面的更优雅先进
 function improveBubbleSort2(arr) {
     let i, pos, j, temp //初始时,最后位置保持不变
     i = arr.length - 1
@@ -78,7 +75,7 @@ function improveBubbleSort2(arr) {
 }
 
 
-//究极版，两头齐头并进。并不是并行的，其实可以考虑用webworker
+//究极版，两头齐头并进,最终汇合。
 function improveBubbleSort3(arr) {
     let start = 0,
         end = arr.length - 1,
